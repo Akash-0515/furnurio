@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+nav>div{
+    display: flex;
+    margin-left: 10px;
+}
+nav>div>h1{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+nav>div+div>ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    gap: 60px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px ;
+}
+nav>div+div+div>i{
+    margin-left: 40px;
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+main{
+    background-color:white;
+}
+main .s1{
+    width: 100%;
+    height: 250px;
+    background-image: url(./cart\ img.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: cart 4s ease-in-out ;
+}
+@keyframes cart{
+    0%{
+        opacity: 1;
+        transform: translateX(-1100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+main .s1 div{
+    display: flex;
+    gap: 5px;
+    padding-top: 10px;
+}
+main .s2{
+    width: 100%;
+    height: 450px;
+    padding: 50px;
+}
+main .s2>div{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 40px;
+    gap: 80px;
+}
+main .s2>div>.cart{
+    width: 60%;
+    height: 70%;
+    /* border: 1px solid black; */
+}
+main .s2>div>.cart>ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    padding-top: 10px;
+    padding-left: 120px;
+    font-weight: bold;
+    background-color: rgb(247, 213, 219);
+    padding-bottom: 20px;
+}
+main>.s2>div>.cart>div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.cart>div>img{
+    width: 100px;
+    height: 100px;
+}
+
+.cart>div>div{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    color: rgb(145, 142, 142);
+}
+.cart>div>div>h5{
+        /* width: 40px;
+        height: 40px; */
+    border: 1px solid rgb(145, 142, 142);;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.cart>div>div>h4{
+    color: black;
+}
+main .s2>div>.totals{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid black; */
+    background-color:rgb(247, 213, 219) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.s2>div>.totals>h2{
+    font-size: 2rem;
+}
+.s2>div>.totals>.t1{
+    display: flex;
+    gap: 30px;
+}
+.totals>div>h5{
+    font-size: 20px;
+}
+.s2>div>.totals>.t1>p{
+    color: rgb(156, 155, 155);
+}
+.s2>div>.totals>.t2>p{
+    color: rgb(196, 96, 96);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.s2>div>.totals>.t2{
+    display: flex;
+    gap: 30px;
+}
+.s2>div>.totals>button{
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.s2>div>.totals>button:hover{
+    background-color: white;
+}
+.s3{
+    width: 100%;
+    height: 150px;
+}
+.trophy{
+    padding: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    background-color: rgba(223, 155, 178, 0.24);
+    margin: 0px 40px;
+}
+.trophy>.r1,.r2,.r3,.r4{
+   display: flex;
+}
+.trophy>div>i{
+    font-size: 4rem;
+}
+.trophy>div>h3>p{
+    color: rgb(128, 126, 126);
+}
+footer{
+    width: 100%;
+    height: 250px;
+    /* background-color: rgb(146, 146, 243); */
+    background-color: rgb(146, 146, 243);
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items:center;
+    gap: 40px;
+   margin: 5px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+footer>div>ul{
+    list-style-type: none;
+}
+footer>div>p{
+    color:#686765;
+}
+footer>.f1>h4{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+footer>.f1>ul{
+    margin-bottom: 30px;
+    color: #8b8a88;
+}
+footer>.f1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer>.f2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer>.f2>ul>li{
+    padding-top: 10px;
+}
+footer>.f3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+footer>.f3>ul>li{
+    padding-top: 20px;
+}
+footer>.f4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,button{
+    background-color:transparent;
+    color:black;
+    border:none;
+    text-decoration: underline;
+}
+/* ----end----- */
+
+@media only screen and (min-width: 300px) and (max-width: 575.98px) {
+    .list{
+        display: none;
+    }
+    .icons i{
+        display: none;
+    }
+    main .s2{
+        height: 0%;
+        padding: 15px;
+    }
+    main .s2>div{
+        padding: 0px;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .s2>div>.cart{
+        min-width: 100%;
+    }
+    .cart>div>img{
+        width: 35px;
+        height: 35px;
+    }
+    main .s2>div>.cart>ul {
+    gap: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    }
+    .cart>div>div {
+    gap: 20px;
+    font-size: 9px;
+}
+    main>.s2>div>.cart>div{
+    gap: 0px;
+    }
+    main .s2>div>.totals{
+        width: 100%;
+        gap: 30px;
+    }
+    .s2>div>.totals>h2 {
+        border-bottom: 1px solid;
+    }
+    main>.s2>div>.cart>div{
+        justify-content: center;
+    }
+    main .s2>div>.cart>ul {
+        justify-content: center;
+    }
+    .s3{
+        height: 0%;
+    }
+    .trophy{
+        flex-wrap: wrap;
+        padding: 6px;
+    }
+    .trophy div i{
+        font-size: 20px;
+    }
+    .trophy h3{
+        font-size: 15px;
+    }
+    footer{
+        flex-wrap: wrap;
+        height: 0%;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+}
+/* -----media 300to 575px end--- */
+
+
+@media only screen and (min-width: 575.98px) and (max-width: 900px) {
+    .icons i{
+        display: none;
+    }
+    main .s2>div{
+        padding: 0px;
+    }
+    main .s2{
+        height: 0%;
+        padding: 20px;
+    }
+    .cart>div>img{
+        width: 50px;
+        height: 50px;
+    }
+    main .s2>div>.cart>ul{
+        gap: 50px;
+        padding-left: 68px;
+        justify-content: center;
+    }
+    main>.s2>div>.cart>div {
+        justify-content: center;
+        gap: 0px;
+    }
+    .cart>div>div{
+        gap: 40px;
+    }
+    main .s2>div>.totals {
+        width: 30%;
+    }
+    .trophy{
+        padding: 20px;
+        gap: 15px;
+        margin: 0px 20px;
+    }
+}
+/* -----end---- */
+
